@@ -1,4 +1,4 @@
-# MARS-VINS-Internal
+# MARS-VINS
 ## Copyright, Patent & License Notice
 The MARS VINS software is copyrighted by the Regents of the University of
 Minnesota. Use of the software may be covered by at least US patents and
