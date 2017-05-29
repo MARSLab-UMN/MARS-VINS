@@ -17,3 +17,60 @@ without warranty of any kind, either expressed or implied. The downloading, or
 executing any part of this software constitutes an implicit agreement to these
 terms. These terms and conditions are subject to change at any time without
 prior notice.
+
+
+## Quick Install Instructions
+Follow these steps to build an example program on linux (built for ubuntu 14.04)
+This program will run stereo vins on a given dataset (see https://drive.google.com/drive/folders/0B599VDE8UJvURjZOazBpak10bFk for some example datasets and config file).
+```
+cd MARS-VINS
+mkdir build
+cd build
+cmake ..
+make example_app -DPLATFORM=x86 -DCAMERA_MODEL=equidistant
+make install
+./example_app <config file> <output file> <imu data file> <left image directory> <right image directory>
+```
+## Custom install
+The following options for MARS-VINS are currently available:
+Platforms:
+
+Linux (x86)
+
+Linux (arm64)
+
+Android (arm64)
+
+In addition to these platforms, 3 camera models:
+
+fov
+
+radial_tangential
+
+equidistant
+
+example_app can be compiled for any of the above combinations in the following
+fashion.
+
+For linux builds:
+```
+cd MARS-VINS
+cd build
+cmake -DPLATFORM=<x86 or arm64> -DCAMERA=<perspective or spherical> ..
+make example_app
+make install
+./example_app <config file> <output file> <imu data file> <left image directory> <right image directory>
+```
+
+For android builds (adb required to interface with android, android device should be rooted):
+```
+cd MARS-VINS
+cd build_android
+sh cmake_android.sh
+make example_app
+make install
+adb push ./example_app <directory on android device>
+adb shell
+cd <directory on android device>
+./example_app <config file> <output file> <imu data file> <left image directory> <right image directory>
+```
