@@ -43,11 +43,11 @@ Android (arm64)
 
 In addition to these platforms, 3 camera models:
 
-fov
+equidistant
+
+fov 
 
 radial_tangential
-
-equidistant
 
 example_app can be compiled for any of the above combinations in the following
 fashion.
@@ -56,7 +56,7 @@ For linux builds:
 ```
 cd MARS-VINS
 cd build
-cmake -DPLATFORM=<x86 or arm64> -DCAMERA=<perspective or spherical> ..
+cmake -DPLATFORM=<x86 or arm64> -DCAMERA_MODEL=<equidistant or fov or  or radial_tangential> ..
 make example_app
 make install
 ./example_app <config file> <output file> <imu data file> <left image directory> <right image directory>
@@ -66,6 +66,7 @@ For android builds (adb required to interface with android, android device shoul
 ```
 cd MARS-VINS
 cd build_android
+## edit cmake_android.sh to select your camera model
 sh cmake_android.sh
 make example_app
 make install
