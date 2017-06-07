@@ -19,12 +19,14 @@ terms. These terms and conditions are subject to change at any time without
 prior notice.
 
 ============================================================================
+
 If you want to use this library in your research, please cite:
 
 1. M. K. Paul, K. Wu, J. Hesch, E. Nerurkar, and S. I. Roumeliotis, 
 “A Comparative Analysis of Tightly-coupled Monocular, Binocular, and Stereo 
 VINS”, International Conference on Robotics and Automation (ICRA), 
 Singapore, May 29-Jun. 3, 2017.
+
 ============================================================================
 
 Notes: 
