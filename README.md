@@ -32,6 +32,17 @@ Singapore, May 29-Jun. 3, 2017.
 Notes: 
 - The desktop version of the code is not optimized, please do not use it
 for timing comparisons.
+- Both global shutter and rolling shutter cameras are supported.
+- The code currently supports 3 types of camera models: 1) equidistant, 2) fov, and 3) radial-tangential.
+- A sample config file is provided in the "config" folder.
+- The provided generic_driver.cpp and vins_example_app.cpp contatins drivers and example code to run the filter from logged data. Sample datasets are available at: http://mars.cs.umn.edu/research/stereo_vins.php.
+If you want to try your own datasets or run on with online data, please modify the driver and example app accordingly.
+- For the sample app, the input <imu-path> should contain the path of the IMU file. The IMU file should be formatted as:
+   timestamp (s), gyro measurement (gx, gy, gz), accel measurement (ax, ay, az)
+- The <image-path> should contain the path of the image folder. The image folder should contain the images in .pgm format and the image names should be in the format m0000000.pgm (e.g., m0000100.pgm).
+The image folder should also contain a "timestamps.txt" file. The timestamps file should be formatted as:
+   image_name, timestamp (s)
+- The left-right images are expected to the timesynced, hence the corresponding timestamps.txt files should be identical.
 
 ============================================================================
 
