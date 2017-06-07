@@ -18,6 +18,20 @@ executing any part of this software constitutes an implicit agreement to these
 terms. These terms and conditions are subject to change at any time without
 prior notice.
 
+============================================================================
+If you want to use this library in your research, please cite:
+
+1. M. K. Paul, K. Wu, J. Hesch, E. Nerurkar, and S. I. Roumeliotis, 
+“A Comparative Analysis of Tightly-coupled Monocular, Binocular, and Stereo 
+VINS”, International Conference on Robotics and Automation (ICRA), 
+Singapore, May 29-Jun. 3, 2017.
+============================================================================
+
+Notes: 
+- The desktop version of the code is not optimized, please do not use it
+for timing comparisons.
+
+============================================================================
 
 ## Quick Install Instructions
 Follow these steps to build an example program on linux (built for ubuntu 14.04)
