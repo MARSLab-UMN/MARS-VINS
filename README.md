@@ -51,11 +51,11 @@ make install
 The following options for MARS-VINS are currently available:
 Platforms:
 
-Linux (x86)
+Linux : Intel-64bit (x86)
 
-Linux (arm64)
+Linux : ARM-64bit (arm64)
 
-Android (arm64)
+Android : ARM-64-bit (arm64)
 
 In addition to these platforms, 3 camera models:
 
