@@ -1,0 +1,66 @@
+# Mode for the 2-camera system
+stereo_mode = 2	# 1:Duo, 2:Stereo
+
+
+# IMU Biases
+accel_bias = [-0.0125,   -0.0060,   -0.1566]
+gyro_bias = [-0.0114,    0.0016,   -0.0080]
+
+
+# Camera Intrinsics
+fc = [297.82526,   297.33911]
+cc = [332.82955,   233.30378]
+kc = [-0.04522, 0.06441, -0.06346, 0.02125, 0.00000]
+
+right_fc = [ 299.10144,   298.28535]
+right_cc = [315.21843,   216.26522]
+right_kc = [-0.06225,   0.09823,   -0.09016,   0.02966, 0.00000]
+
+image_dimension = [640, 480]
+
+
+# IMU-Camera Extrinsic
+imu_q_cam = [0,         0,   -0.7071,    0.7071]
+imu_p_cam = [.00157, -.13336, .0235]
+imu_q_cam_right = [0.013617636555835  -0.013384815447097  -0.712501629148587   0.701396931238432]
+imu_p_cam_right = [0.009804716553368   0.134603406534874  -0.002273390520198]
+cam_l_q_cam_r = [0.000164630963610  -0.019093800030358  -0.007852282499049   0.999786847961405]
+cam_l_p_cam_r = [0.267968546171590  -0.008234874498261  -0.025773884863310]
+
+
+# IMU Noise [gyro_white-noise_sigma, gyro_bias_sigma, accel_white-noise_sigma, accel_bias_sigma]
+imu_noises = [5.30884e-05, 0.000141254, 0.00188365, 0.0125893]
+
+
+# IMU Intrinsics (optional, can set to false)
+use_imu_intrinsics = true
+accel_q_gyro = [0.001387827317663649  -0.001081272093680761 -0.0005771480080873569     0.9999982858416172]
+skew_gyro =  [0.006410355153366647  0.007331586063436632 -0.005641147968318373]
+scale_gyro = [1.008251476897832 1.012280390654125 1.001424594939117]
+skew_accel = [-0.04243770073016875 -0.006595876795554548  -0.00168528741443298]
+scale_accel = [0.9718633204753299  1.000362430527352  1.002223889080376]
+gyro_g_sensitivity = [0 0 0 0 0 0 0 0 0]
+
+
+# Priors
+prior_extrinsic_position = 30
+prior_extrinsic_orientation = 40
+prior_extrinsic_position_lr = 1e8
+prior_extrinsic_orientation_lr = 1e4
+
+prior_time_sync = 1e6
+prior_velocity = 1e2
+prior_accel_bias = 1e1
+prior_gyro_bias = 1e2
+prior_rolling_shutter = 1e6
+
+
+# Other parameters 
+imu_dt = 0.010806833017712	# seconds
+
+rolling_shutter_time = 0	# seconds
+
+gravity_magnitude = 9.79906
+
+# Sliding window size
+max_number_of_frames = 5
