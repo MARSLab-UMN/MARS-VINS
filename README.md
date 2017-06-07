@@ -47,8 +47,8 @@ The image folder should also contain a "timestamps.txt" file. The timestamps fil
 ============================================================================
 
 ## Quick Install Instructions
-Follow these steps to build an example program on linux (built for ubuntu 14.04)
-This program will run stereo vins on a given dataset (see https://drive.google.com/drive/folders/0B599VDE8UJvURjZOazBpak10bFk for some example datasets and config file).
+Follow these steps to build an example program on linux (built for Ubuntu 14.04)
+This program will run stereo vins on a given dataset (see http://mars.cs.umn.edu/research/stereo_vins.php for some example datasets).
 ```
 cd MARS-VINS
 mkdir build
