@@ -27,6 +27,12 @@ VINS”, International Conference on Robotics and Automation (ICRA),
 Singapore, May 29-Jun. 3, 2017.
 ============================================================================
 
+Notes: 
+- The desktop version of the code is not optimized, please do not use it
+for timing comparisons.
+
+============================================================================
+
 ## Quick Install Instructions
 Follow these steps to build an example program on linux (built for ubuntu 14.04)
 This program will run stereo vins on a given dataset (see https://drive.google.com/drive/folders/0B599VDE8UJvURjZOazBpak10bFk for some example datasets and config file).
