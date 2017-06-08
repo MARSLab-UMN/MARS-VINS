@@ -58,23 +58,27 @@ make example_app
 make install
 ./example_app <config file> <output file> <imu data file> <left image directory> <right image directory>
 ```
+If you get this error ```error while loading shared libraries: libmars_core.so: cannot open shared object file: No such file or directory```, please add the "build" directory to your LD_LIBRARY_PATH.
+
+```export LD_LIBRARY_PATH="path-to-build-directory":$LD_LIBRARY_PATH```
 ## Custom install
 The following options for MARS-VINS are currently available:
+
 Platforms:
 
-Linux : Intel-64bit (x86)
+- Linux : Intel-64bit (x86)
 
-Linux : ARM-64bit (arm64)
+- Linux : ARM-64bit (arm64)
 
-Android : ARM-64-bit (arm64)
+- Android : ARM-64-bit (arm64)
 
-In addition to these platforms, 3 camera models:
+Camera models:
 
-equidistant
+- equidistant
 
-fov 
+- fov 
 
-radial_tangential
+- radial_tangential
 
 example_app can be compiled for any of the above combinations in the following
 fashion.
